@@ -5,7 +5,7 @@
 ## Login   <meddou_m@epitech.net>
 ##
 ## Started on  Sun May 22 20:42:47 2016 meddou_m
-## Last update Wed Jul  6 11:43:18 2016 meddou_m
+## Last update Wed Jul 13 21:37:32 2016 meddou_m
 ##
 
 RM	= rm -f
@@ -15,6 +15,7 @@ NAME	= libc_container.a
 CFLAGS	= -Wall -Wall -Werror
 
 SRCS	= list.c \
+	  map.c	\
 	  stack.c
 
 OBJS	= $(SRCS:.c=.o)

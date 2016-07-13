@@ -144,13 +144,13 @@ t_list		*list_delete_node(t_list *list, void *elem)
   while (tmp)
     {
       if (tmp->next && tmp->next->elem == elem)
-	{
-	  tmp_n = tmp->next->next;
-	  free(tmp->next);
-	  tmp->next = tmp_n;
-	}
+	     {
+         tmp_n = tmp->next->next;
+         free(tmp->next);
+         tmp->next = tmp_n;
+       }
       if (tmp)
-	tmp = tmp->next;
+	     tmp = tmp->next;
     }
   return (list);
 }
